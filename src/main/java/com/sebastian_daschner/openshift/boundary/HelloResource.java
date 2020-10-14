@@ -12,4 +12,10 @@ public class HelloResource {
         return "Hello OpenShift";
     }
 
+    @GET
+    @Path("/test")
+    public String helloInd() {
+        return "Hello Thomas";
+    }
+
 }
