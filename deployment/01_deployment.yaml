@@ -16,6 +16,9 @@ spec:
       - name: hello-openshift
         image: 172.30.1.1:5000/training11/hello-openshift:build-1
         imagePullPolicy: Always
+        volumeMounts:
+          - name: config-volume
+            mountPath: /tmp/config-data
         livenessProbe:
           httpGet:
             path: /

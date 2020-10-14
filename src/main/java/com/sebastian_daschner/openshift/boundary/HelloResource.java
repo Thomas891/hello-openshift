@@ -16,7 +16,6 @@ public class HelloResource {
         } else {
             return "Hello " + user + "!";
         }
-
     }
 
     @GET
