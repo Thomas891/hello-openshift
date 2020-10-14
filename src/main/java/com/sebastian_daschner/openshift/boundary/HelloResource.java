@@ -15,7 +15,7 @@ public class HelloResource {
     @GET
     @Path("/test")
     public String helloInd() {
-        return "Hello Thomas";
+        return "Hello Thomas!";
     }
 
 }
