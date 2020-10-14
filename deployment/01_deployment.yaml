@@ -31,5 +31,9 @@ spec:
             port: 9080
             scheme: HTTP
           initialDelaySeconds: 30
+      volumes:
+        - name: config-volume
+          configMap:
+            name: hello-openshift-config
       restartPolicy: Always
 ---
