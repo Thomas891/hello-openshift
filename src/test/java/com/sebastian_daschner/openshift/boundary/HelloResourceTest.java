@@ -12,9 +12,9 @@ public class HelloResourceTest {
 
     @Test
     public void testHello() {
-        String first = helloResource.hello();
-        String second = helloResource.hello();
-        String third = helloResource.hello();
+        String first = helloResource.hello("");
+        String second = helloResource.hello(null);
+        String third = helloResource.hello("");
 
         Stream.of(first, second, third).forEach(s -> assertThat(s).startsWith("Hello OpenShift"));
     }
